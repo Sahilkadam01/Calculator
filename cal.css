@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: darkcyan;
+
+}
+
+.cal
+{
+    background-color: aqua;
+    height:auto;
+    width:40%;
+    margin-top: 15%;
+    border-radius: 5px;
+    border: 2px solid black;
+   
+}
+
+.cal h1
+{
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+
+#first
+{
+    text-decoration: black;
+    font-size:large;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+#ope
+{
+    font-size:large;
+}
+
+#ress
+{
+    font-size:large;
+    margin-bottom: 2%;
+}
+
+#second
+{
+    font-size: large;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#btn
+{
+    font-size: x-large;
+    background-color:orange;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+.res ,.option
+{
+    font-size: large;
+}
+

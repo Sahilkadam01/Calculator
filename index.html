@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="cal.css">
+
+    </head>
+<body>
+ 
+ <div class="cal">
+  <h1>Calculator</h1>
+    <input type="number" name="first" placeholder="Enter first number" id="first" step="any"/>
+    <input type="number" name="second" placeholder="Enter second number" id="second" step="any" />
+    <br>
+    <label class="option">Choose operator :</label>
+      <select id="ope">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+    </select>
+    <br>
+    <br>
+    <button id="btn" onclick="Cal()">Calculate</button>
+    <br>
+    <label class="res">Result is:</label>
+    <input type="text" name="" placeholder="Result" id="ress" readonly=""/>
+  </div>
+</body>
+
+<script type="text/javascript">
+
+      function Cal()
+      {
+        var opr1 = document.getElementById('first').value;
+        var opr2 = document.getElementById('second').value;
+        var ope = document.getElementById('ope').value;
+        if(ope == "+")
+        {
+          var res=parseInt(opr1) + parseInt(opr2);
+        }
+        if(ope=="-")
+        {
+          var res=parseInt(opr1) - parseInt(opr2);
+        }
+        if(ope=="*")
+        {
+          var res=parseInt(opr1) * parseInt(opr2);
+        }
+        if(ope=="/")
+        {
+          var res=parseInt(opr1) / parseInt(opr2);
+        }
+         
+        document.getElementById("ress").value=res;
+      }
+
+    
+   
+</script>    
+
+</html>
